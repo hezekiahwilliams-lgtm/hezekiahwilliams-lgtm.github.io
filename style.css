@@ -211,3 +211,31 @@ nav h1 {
 #portfolio a:hover::after {
   opacity: 1;
 }
+.image-gallery {
+  display: display-inside;
+  gap: 10px;
+}
+.image-gallery img {
+  width: 100px;
+  height: 500px;
+  object-fit: cover;
+}
+.image-gallery img {
+  width: 160%;
+  max-width:300px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display:display-inside;
+  border-radius: 16px;
+  filter:;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  transition:
+    filter 0.4s ease,
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+.image-gallery img:hover {
+  filter:;
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(214, 48, 48, 0.18);
+}
